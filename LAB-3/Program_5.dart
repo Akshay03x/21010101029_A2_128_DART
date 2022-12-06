@@ -2,7 +2,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  var  a = (stdin.readLineSync()!);
+  var a = (stdin.readLineSync()!);
   print(a.split('').reversed.join());
-
+  print(a.split('+'));
 }

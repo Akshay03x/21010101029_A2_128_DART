@@ -8,7 +8,7 @@ void main(List<String> args) {
   double x = double.parse(stdin.readLineSync()!);
 
   if (x > 0) {
-    print("positive");
+    print("positive ${x.toStringAsFixed(2)}");
   } else {
     print("negative");
   }

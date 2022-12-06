@@ -3,40 +3,58 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  print("enter number 1");
-  double n1 = double.parse(stdin.readLineSync()!);
+  // var x = null;
+  double oldN = 0;
+  double ans = 0;
 
-  print("enter number 2");
-  double n2 = double.parse(stdin.readLineSync()!);
+  String? s;
+  while (s != '=') {
+    print("enter number :");
+    double n = double.parse(stdin.readLineSync()!);
 
-  print("enter choice  + - * / :");
-  String? s = stdin.readLineSync();
+    print("enter choice  + - * / :");
+    s = stdin.readLineSync();
 
-  switch (s) {
-    case '+':
-      {
-        print(n1 + n2);
-      }
-      break;
+    switch (s) {
+      case '+':
+        {
+          oldN = n;
+          ans = ans + oldN;
+        }
+        break;
 
-    case '-':
-      {
-        print(n1 - n2);
-      }
-      break;
-    case '*':
-      {
-        print(n1 * n2);
-      }
-      break;
-    case '/':
-      {
-        print(n1 / n2);
-      }
-      break;
-    default:
-      {
-        print("enter valid");
-      }
+      case '-':
+        {
+          oldN = n;
+          ans = ans - oldN;
+        }
+        break;
+      case '*':
+        {
+          oldN = n;
+          ans = ans * oldN;
+        }
+        break;
+      case '/':
+        {
+          oldN = n;
+          ans = ans / oldN;
+        }
+        break;
+
+      case '=':
+        {
+          ans = ans + n;
+          break;
+        }
+      // break;
+      default:
+        {
+          print("enter valid");
+        }
+        break;
+    }
+    // print(":$ans");
   }
+  print(ans);
 }
