@@ -8,19 +8,20 @@ void main(List<String> args) {
   int? n;
   int sumEven = 0;
   int sumOdd = 0;
+  List<int> list = [];
   while (n != 0) {
     stdout.write("Enter Number :");
     n = int.parse(stdin.readLineSync()!);
-    if (n > 0 && n % 2 == 0) {
-      sumEven = sumEven + n;
-    } else if (n < 0 && n % 2 != 0) {
-      sumOdd = sumOdd + n;
-    } else {
-      break;
+    list.add(n);
+
+  }
+  for (var x in list){
+    if (x > 0 && x % 2 == 0) {
+      sumEven = sumEven + x;
+    } else if (x < 0 && x % 2 != 0) {
+      sumOdd = sumOdd + x;
     }
-    // if(n)
   }
   print(sumEven);
   print(sumOdd);
-
 }
