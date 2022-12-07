@@ -42,11 +42,11 @@ void main(List<String> args) {
         }
         break;
 
-      case '=':
-        {
-          ans = ans + n;
-          break;
-        }
+      // case '=':
+      //   {
+      //     ans = ans + n;
+      //     break;
+      //   }
       // break;
       default:
         {
@@ -54,7 +54,7 @@ void main(List<String> args) {
         }
         break;
     }
-    // print(":$ans");
+    print(":$ans");
   }
-  print(ans);
+  // print(ans);
 }
