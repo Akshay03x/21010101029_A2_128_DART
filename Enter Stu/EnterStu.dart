@@ -50,7 +50,7 @@ class Enterstu {
     print("Department Is:  ${m['department']}");
     print("Spi Is:  ${m['spi']}");
 
-    print("====================");
+    print("===================");
   }
 
   int search(
