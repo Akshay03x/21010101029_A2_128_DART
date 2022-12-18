@@ -11,6 +11,7 @@ class Candidate {
   double? candidate_Weight;
   double? candidate_Height;
 
+  
   void GetCandidateDetails() {
     print("Enter Candidate_ID");
     candidate_ID = int.parse(stdin.readLineSync()!);
