@@ -6,7 +6,7 @@ void main(List<String> args) {
   // var newFormat = DateFormat("yy-MM-dd");
   // final String formatted = formatter.format(now);
   // print(formatted);
-    var newFormat = DateFormat("yy-MM-dd");
+    // var newFormat = DateFormat("yy-MM-dd");
     String updatedDt = newFormat.format(dt);
     print(updatedDt); // 20-04-03
 
